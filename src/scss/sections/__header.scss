@@ -1,0 +1,103 @@
+.header {
+  background-image: url("./img/mountain_back.jpg");
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/mountain_front_big.png");
+  }
+
+  .logo-and-additional {
+    display: flex;
+    padding-top: 23px;
+    align-items: center;
+    position: relative;
+
+    .logo {
+      display: table;
+      margin: 0 auto;
+    }
+
+    .additional {
+      position: absolute;
+      top: 60px;
+      right: 90px;
+    }
+  }
+
+  .search {
+    background-image: url("../../img/search.png");
+    height: 48px;
+    width: 46px;
+    display: inline-block;
+    margin-right: 62px;
+  }
+
+  .bucket {
+    background-image: url("../../img/shopping-cart.png");
+    display: inline-block;
+    width: 48px;
+    height: 43px;
+  }
+
+  nav {
+    margin: 63px auto 60px;
+
+    .menu {
+      display: flex;
+      justify-content: center;
+
+      .menu-item {
+        color: $font-color;
+        font-family: "Quotus Bold";
+        text-transform: uppercase;
+        font-size: 23px;
+        line-height: 42.33px;
+        letter-spacing: 4.14px;
+        margin-right: 120px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .main-subtitle {
+    font-family: "Quotus Thin";
+    font-size: 35px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6.3px;
+  }
+
+  .main-title {
+    font-family: Quotus Normal;
+    font-size: 175px;
+    color: $white;
+    line-height: 46.5px;
+    text-transform: uppercase;
+    letter-spacing: 6.36px;
+    text-align: center;
+    margin-top: 100px;
+    user-select: none;
+  }
+
+  .people {
+    position: absolute;
+    top: 253px;
+    right: 0;
+  }
+}

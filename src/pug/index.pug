@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="style.css")
+    title Veltry
+  body
+    include mixin.pug
+
+    header(class="header")
+      div(class="logo-and-additional")
+        div(class="logo")
+          img(src="../img/veltry_.png", alt="veltry_", srcset="")
+        div(class="additional")
+          a(href="#" class="search")
+          a(href="#" class="bucket")
+      nav(class="nav")
+        ul(class="menu")
+          li(class="menu-item")
+            a(href="#") TRAVEL BAGS
+          li(class="menu-item")
+            a(href="#") ACCESSORIES
+          li(class="menu-item")
+            a(href="#") BOOKS
+          li(class="menu-item")
+            a(href="#") MAPS
+      h2(class="main-subtitle") FIND EVERYTHING YOU NEED
+      h1(class="main-title") FOR A TRIP
+      div(class="people")
+        img(src="../img/Layer_3.png", alt="people")
+        //- Main
+    main(class="main")
+      div(class="store")
+        h3(class="store-title") Best Travel
+        span(class="sub-title") ACCESSORIES
+        div(class="store-content") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        a(href="#" class="link-view-all") VIEW ALL
+      section(class="arrivals cont")
+        h3(class="title-arrivals") NEW ARRIVALS
+        div(class="subtitle-arrivals") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        div(class="arrivals-content")
+          input(type="radio" name="popular")
+          label(for="popular" class="popular") Popular
+          input(type="radio" class="best-seller")
+          label(for="best-seller" class="best-seller") Best Seller
+
+
+          div(class="merchandise-one")
+            div(class="merchandise-one-item")
+              div(class="merchandise-one-item-image")
+                img(src="../img/blue_luggage_bag_.png", alt="blue_luggage_bag_")
+              p(class="merchandise-one-item-description") American Tourister Crete Polyester 770 mm Blue Softsided Check-in Luggage (49W (0) 09 003)
+              div(class="flex")
+                span $45.00
+                img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+            div(class="merchandise-one-item")
+              div(class="merchandise-one-item-image")
+                img(src="../img/two_bag.png", alt="black_bag_front_back")
+              p(class="merchandise-one-item-description") American Tourister Crete Polyester 680 mm Black Softsided Check-in Luggage
+              div(class="flex")
+                span $57.00
+                img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+            div(class="merchandise-one-item")
+              div(class="merchandise-one-item-image")
+                img(src="../img/sky_blue_luggage_bag.png", alt="sky_blue_luggage_bag")
+              p(class="merchandise-one-item-description") Nasher Miles Manarola Soft-Sided Luggage Set of 1Trolley/Travel/Tourist Bags (20, 24 & 28 Inch)
+              div(class="flex")
+                span $60.00
+                img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+            div(class="merchandise-one-item")
+              div(class="merchandise-one-item-image")
+                img(src="../img/kisspng-american-tourister-suitcase-samsonite-baggage-trav-orange-suitcase-caster-5a9aa67ca38c32.1914375015200846046699.png", alt="kisspng-american-tourister-suitcase-samsonite-baggage-trav-orange-suitcase-caster-5a9aa67ca38c32.1914375015200846046699")
+              p(class="merchandise-one-item-description") Nasher Miles Santorini PP Hard-Sided Luggage Set Of 1 Trolley/Travel/Tourist Bags
+              div(class="flex")
+                span $67.00
+                img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+            div(class="merchandise-one-item")
+              div(class="merchandise-one-item-image")
+                img(src="../img/Two_Blue_Travel_Bags_PNG_Clipart_Picture.png", alt="Two_Blue_Travel_Bags_PNG_Clipart_Picture")
+              p(class="merchandise-one-item-description") Nasher Miles Santorini PP Hard-Sided Check-In Luggage Bag 28.9 Inch | 73.5 CM
+              div(class="flex")
+                span $73.00
+                img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+            div(class="merchandise-one-item")
+              div(class="merchandise-one-item-image")
+                img(src="../img/Pink_Travel_Bag_PNG_Clipart_Picture.png", alt="Pink_Travel_Bag_PNG_Clipart_Picture")
+              p(class="merchandise-one-item-description") American Tourister X-Bags Casual 2 Fabric 65 cm Magenta Gym Bag (X-Bags Casual
+              div(class="flex")
+                span $79.00
+                img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+        h3(class="camps-title") OUR CAMPS
+        div(class="camps-subtitle") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        div
+          input(type="radio" name="popular")
+          label(for="popular" class="popular") Popular
+          input(type="radio" class="best-seller")
+          label(for="best-seller" class="best-seller") Best Seller
+        div(class="camps-content")
+          div(class="camps-conten-item")
+            div(class="camps-conten-item-image")
+              img(src="../img/camp 1.jpg", alt="camp 1")
+            p(class="merchandise-one-item-description") Diswa Quick Setup 4-Person All Season... Standard Tent Quality
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+          div(class="camps-conten-item")
+            div(class="camps-conten-item-image")
+              img(src="../img/camp 2.jpg", alt="camp 2")
+            p(class="merchandise-one-item-description") Dealcrox New 2 Person Tent For Camping Waterproof Outdoor Tent/
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+
+          div(class="camps-conten-item")
+            div(class="camps-conten-item-image")
+              img(src="../img/camp 3.jpg", alt="camp 3")
+            p(class="merchandise-one-item-description") Ozoy Picnic Camping Portable Waterproof Tent For 6 Person/ Camp
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+        a(href="#" class="round-link") SEE MORE
+
+        +title("CAMERAS & TRIPOD","It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout","camera-title","camera-subtitle")
+        div(class="camera-content")
+          div(class="camera-content-item")
+            div(class="camera-content-item-image")
+              img(src="../img/camera_1_.png", alt="camp 3")
+            p(class="camera-content-item-description") Basics 60-Inch Lightweight Tripod with Bag (Black)
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+          div(class="camera-content-item")
+            div(class="camera-content-item-image")
+              img(src="../img/camera_2.png", alt="camp 3")
+            p(class="camera-content-item-description") Photron Tripod Stedy 450 with 4.5 Feet Pan Head + Extra Quick Release Plate + Foam Grip + Carry Case
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+          div(class="camera-content-item")
+            div(class="camera-content-item-image")
+              img(src="../img/camera_3.png", alt="camp 3")
+            p(class="camera-content-item-description") SONY G7 Mirrorless Camera with LUMIX G VARIO 14-42mm f/3.5-5.6 II ASPH./MEGA O.I.S. Lens - Black
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+        +seemore()
+        +title("CAMERA LENS","There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.","lens-title","lens-subtitle")
+        div(class="lens-content")
+          div(class="lens-content-item")
+            div(class="lens-content-image")
+              img(src="../img/lens_1.png", alt="camp 3")
+            p(class="lens-content-description") Tamron A17E AF 70-300mm F/4-5.6 Di LD Macro Telephoto Zoom Lens with Hood for Canon DSLR Camera (Black)
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+          div(class="lens-content-item")
+            div(class="lens-content-image")
+              img(src="../img/lens_2.png", alt="camp 3")
+            p(class="lens-content-description") Nikon AF 70-300mm f/4-5.6G Telephoto Zoom Lens for Nikon DSLR Camera Matte Black
+            div(class="flex")
+              span $67.00
+              img(src="../img/shopping-cart_copy_2.png", alt="shopping-cart")
+          div(class="lens-content-item")
+            div(class="lens-content-image")
+              img(src="../img/camera_lens_2.png", alt="camp 3")
+            p(class="desc-w-100") Yongnuo_ EF YN 50mm F/1.8 1:1.8 Standard Prime Lens for Canon Rebel Digital Camera Works Well With 5D, 7D, 60D, 70D, T3, T3I, T5, T5i, Plus Nikon AF-S DX Nokkor 55-300mm F/4.5-5.6G ED VR Telephoto Zoom Lens for Nikon DSLR Camera
+        +seemore()
+    //-
+
+    section(class="subscription")
+      div(class="feature")
+        h3(class="feature-title") Sign up for the
+        div(class="feature-subtitle") VELTRY NEWSLETTER
+        div(class="feature-description") But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+        form(action="" class="flex")
+          input(type="text" placeholder="Enter your E-mail")
+          button(type="submit") JOIN NOW
+    //-
+    footer(class="footer cont")
+      div(class="menu")
+        div(class="menu-item")
+          div(class="title")
+            a(href="#") Shop Now
+          div
+            a(href="#") Lenses
+          div
+            a(href="#") Camps
+          div
+            a(href="#") Bags
+          div
+            a(href="#") Collections
+          div
+            a(href="#") Gifts
+          div
+            a(href="#") Offers
+
+        div(class="menu-item")
+          div(class="title")
+            a(href="#") About Veltry
+          div
+            a(href="#") About Us
+          div
+            a(href="#") Veltry Core Values
+          div
+            a(href="#") Affiliate Program
+          div
+            a(href="#") Work With Us
+          div
+            a(href="#") In The Media
+
+        div(class="menu-item")
+          div(class="title")
+            a(href="#") Help
+          div
+            a(href="#") Payment Options
+          div
+            a(href="#") Bulk Orders
+          div
+            a(href="#") International Orders
+          div
+            a(href="#") Contact Us
+          div
+            a(href="#") Copyrights
+          div
+            a(href="#") Site Map
+      div(class="social")
+        button
+          img(src="../img/facebook-logo_copy.png", alt="", srcset="")
+        button
+          img(src="../img/instagram.png", alt="", srcset="")
+        button
+          img(src="../img/twitter-logo.png", alt="", srcset="")
+        button
+          img(src="../img/social-google-plus-square-button.png", alt="", srcset="")
+        button
+          img(src="../img/linkedin-logo.png", alt="", srcset="")
+

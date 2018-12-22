@@ -1,0 +1,467 @@
+.main {
+
+  @mixin title($font) {
+    font-family: 'Quotus Thin';
+    font-size: $font;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  @mixin subtitle() {
+    font-family: 'Roboto-Regular';
+    font-size: 24px;
+    line-height: 42.33px;
+    letter-spacing: 0.48px;
+    max-width: 830px;
+    text-align: center;
+  }
+
+  @mixin round-button($font) {
+    border-radius: 40px;
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.2);
+    background-color: $link;
+    padding: 30px 80px;
+    font-size: $font;
+    color: white;
+  }
+
+  @mixin parentCard() {
+    display: flex;
+    width: 100%;
+  }
+
+  @mixin childrenCard() {
+    font-family: 'Roboto-Medium';
+    text-align: center;
+    font-size: 14px;
+    line-height: 26.03px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 570px;
+    justify-content: space-around;
+
+    div {
+      height: 450px;
+
+      img {
+        height: 100%;
+      }
+
+    }
+
+    p {
+      width: 320px;
+    }
+
+    div.flex {
+      span {
+        font-size: 20px;
+        font-family: 'Roboto-Bold';
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .store {
+    max-width: 720px;
+    margin-left: 230px;
+
+    .store-title {
+      font-family: 'Quotus Normal';
+      font-size: 80px;
+      line-height: 34.4px;
+      letter-spacing: 1.96px;
+    }
+
+    .sub-title {
+      font-size: 80px;
+      line-height: 45.27px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-family: Quotus Thin;
+    }
+
+    .store-content {
+      color: #272626;
+      font-family: 'Roboto-Light';
+      font-size: 21px;
+      line-height: 42.33px;
+      letter-spacing: 0.42px;
+      margin-top: 60px;
+    }
+
+    .link-view-all {
+      margin-top: 60px;
+      display: inline-block;
+      box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 40px;
+      background-color: $link;
+      padding: 30px 80px;
+      color: $white;
+      line-height: 28.89px;
+      text-transform: uppercase;
+      font-size: 31px;
+      font-family: 'Roboto-Bold';
+    }
+  }
+
+  .arrivals {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-arrivals {
+      font-family: 'Quotus Thin';
+      font-size: 68px;
+      font-weight: bold;
+      line-height: 46.18px;
+      text-transform: uppercase;
+      letter-spacing: 1.24px;
+    }
+
+    .subtitle-arrivals {
+      font-family: 'Roboto-Regular';
+      font-size: 24px;
+      line-height: 42.33px;
+      letter-spacing: 0.48px;
+      max-width: 830px;
+      text-align: center;
+    }
+
+    .arrivals-content {
+      margin-top: 54px;
+      text-align: center;
+
+      input[type='radio'] {
+        display: none;
+      }
+
+      label {
+        font-family: 'Roboto-Regular';
+        font-size: 32px;
+        line-height: 42.33px;
+        letter-spacing: 0.64px;
+        color: $link;
+        cursor: pointer;
+        user-select: none;
+
+        &.popular {
+          margin-right: 200px;
+        }
+      }
+
+      .merchandise-one {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 50px;
+        grid-column-gap: 100px;
+        align-items: center;
+
+        // @include row-flex();
+        // @include md(justify-content, space-betwen);
+        .merchandise-one-item {
+          font-family: 'Roboto-Medium';
+          text-align: center;
+          font-size: 14px;
+          line-height: 26.03px;
+          // @include col();
+          // @include size(4);
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          margin-bottom: 30px;
+          height: 570px;
+          justify-content: space-around;
+
+          .merchandise-one-item-image {
+            height: 450px;
+
+            img {
+              height: 100%;
+            }
+
+          }
+
+          .merchandise-one-item-description {
+            width: 320px;
+          }
+
+          div.flex {
+            span {
+              font-size: 20px;
+              font-family: 'Roboto-Bold';
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .flex {
+          display: flex;
+        }
+      }
+    }
+
+    .camps-title {
+      @include title(62px);
+    }
+
+    .camps-subtitle {
+      @include subtitle();
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      font-family: 'Roboto-Regular';
+      font-size: 32px;
+      line-height: 42.33px;
+      letter-spacing: 0.64px;
+      color: $link;
+      cursor: pointer;
+      user-select: none;
+
+      &.popular {
+        margin-right: 200px;
+      }
+    }
+
+    .camps-content {
+      display: flex;
+      width: 100%;
+      margin-top: 130px;
+
+
+      .camps-conten-item {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        font-family: 'Roboto-Medium';
+        text-align: center;
+        font-size: 14px;
+        line-height: 26.03px;
+        justify-content: space-between;
+        margin-right: 30px;
+
+        .camps-conten-item-image {
+          height: 250px;
+        }
+
+        .merchandise-one-item-description {
+          max-width: 300px;
+        }
+
+        div.flex {
+          display: flex;
+
+          span {
+            font-size: 20px;
+            font-family: 'Roboto-Bold';
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .round-link {
+      @include round-button(23px);
+      margin-top: 50px;
+      font-family: 'Roboto-Medium';
+    }
+  }
+
+  .camera-title {
+    @include title(62px);
+    margin-top: 130px;
+  }
+
+  .camera-subtitle {
+    @include subtitle();
+  }
+
+  .camera-content {
+    @include parentCard();
+    margin-top: 130px;
+    justify-content: space-between;
+
+    .camera-content-item {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      font-family: 'Roboto-Medium';
+      text-align: center;
+      font-size: 14px;
+      line-height: 26.03px;
+      justify-content: space-between;
+      max-width: 310px;
+
+      .camera-content-item-image {
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .camera-content-item-description {
+        max-width: 300px;
+        height: 10%;
+        margin-bottom: 10px;
+      }
+
+      div.flex {
+        display: flex;
+
+        span {
+          font-size: 20px;
+          font-family: 'Roboto-Bold';
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .lens-title {
+    @include title(62px);
+    margin-top: 130px;
+  }
+
+  .lens-subtitle {
+    @include subtitle();
+  }
+
+  .lens-content {
+    @include parentCard();
+    margin-top: 130px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .lens-content-item {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      font-family: 'Roboto-Medium';
+      text-align: center;
+      font-size: 14px;
+      line-height: 26.03px;
+      justify-content: flex-end;
+      width: 500px;
+      margin-bottom: 50px;
+
+      .lens-content-image {
+        margin-bottom: 60px;
+      }
+
+      .lens-content-description {
+        max-width: 285px;
+        height: 90px;
+        margin-bottom: 10px;
+      }
+
+      div.flex {
+        display: flex;
+
+        span {
+          font-size: 20px;
+          font-family: 'Roboto-Bold';
+          margin-right: 20px;
+        }
+      }
+
+      &:nth-child(1) {
+        margin-right: 230px;
+      }
+
+      &:nth-child(3) {
+        max-width: 900px;
+        width: auto;
+
+        .desc-w-100 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.subscription {
+  background-image: url('./img/mountaing image.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1200px;
+
+  @media (min-width: 1990px) {
+    height: 100vh;
+  }
+
+  .feature {
+    padding: 485px 230px;
+
+    .feature-title {
+      font-family: 'Quotus Bold';
+      color: white;
+      line-height: 33.48px;
+      font-size: 55px;
+    }
+
+    .feature-subtitle {
+      font-family: 'Quotus Thin';
+      font-size: 51px;
+      font-weight: bold;
+      line-height: 33.48px;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    .feature-description {
+      font-family: 'Roboto-Medium';
+      font-size: 17px;
+      color: white;
+      line-height: 30.33px;
+      margin-top: 60px;
+      max-width: 640px;
+    }
+
+    form.flex {
+      display: flex;
+      margin-top: 50px;
+
+      input {
+        border-radius: 40px;
+        padding: 30px 80px;
+        background: white;
+        border: none;
+        margin-right: 30px;
+        font-family: 'Roboto-Medium';
+        color: gray;
+        font-size: 20px;
+      }
+
+      button {
+        padding: 30px 80px;
+        background: $link;
+        border: none;
+        border-radius: 40px;
+        color: white;
+        font-family: 'Roboto-Medium';
+
+        &:nth-child(2) {
+          font-size: 25px;
+          padding: 15px 60px;
+        }
+      }
+    }
+  }
+}

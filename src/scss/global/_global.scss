@@ -59,6 +59,16 @@
     url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
 }
 
+html {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 9px;
+  }
+}
+
 a,
 button {
   cursor: pointer;
@@ -79,6 +89,10 @@ p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -91,6 +105,12 @@ body {
 }
 
 .cont {
-  width: 1340px;
+  width: 134rem;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .cont {
+    width: auto;
+  }
 }

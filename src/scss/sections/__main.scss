@@ -9,20 +9,24 @@
 
   @mixin subtitle() {
     font-family: 'Roboto-Regular';
-    font-size: 24px;
-    line-height: 42.33px;
-    letter-spacing: 0.48px;
-    max-width: 830px;
+    font-size: 2.4rem;
+    line-height: 4.233rem;
+    letter-spacing: 0.048rem;
+    max-width: 83rem;
     text-align: center;
   }
 
   @mixin round-button($font) {
-    border-radius: 40px;
-    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4rem;
+    box-shadow: 0 .4rem .5rem .1rem rgba(0, 0, 0, 0.2);
     background-color: $link;
-    padding: 30px 80px;
+    padding: 3rem 8rem;
     font-size: $font;
     color: white;
+
+    @media (max-width: 1500px) {
+      padding: 2rem 7rem;
+    }
   }
 
   @mixin parentCard() {
@@ -33,18 +37,18 @@
   @mixin childrenCard() {
     font-family: 'Roboto-Medium';
     text-align: center;
-    font-size: 14px;
-    line-height: 26.03px;
+    font-size: 1.4rem;
+    line-height: 2.603rem;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    height: 570px;
+    margin-bottom: 3rem;
+    height: 57rem;
     justify-content: space-around;
 
     div {
-      height: 450px;
+      height: 45rem;
 
       img {
         height: 100%;
@@ -53,87 +57,93 @@
     }
 
     p {
-      width: 320px;
+      width: 32rem;
     }
 
     div.flex {
       span {
-        font-size: 20px;
+        font-size: 2rem;
         font-family: 'Roboto-Bold';
-        margin-right: 20px;
+        margin-right: 2rem;
       }
     }
   }
 
   .store {
-    max-width: 720px;
-    margin-left: 230px;
+    max-width: 72rem;
+    margin-left: 23rem;
 
     .store-title {
       font-family: 'Quotus Normal';
-      font-size: 80px;
-      line-height: 34.4px;
-      letter-spacing: 1.96px;
+      font-size: 8rem;
+      line-height: 3.44rem;
+      letter-spacing: .196rem;
     }
 
     .sub-title {
-      font-size: 80px;
-      line-height: 45.27px;
+      font-size: 8rem;
+      line-height: 4.527rem;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
+      letter-spacing: .15rem;
       font-family: Quotus Thin;
     }
 
     .store-content {
       color: #272626;
       font-family: 'Roboto-Light';
-      font-size: 21px;
-      line-height: 42.33px;
-      letter-spacing: 0.42px;
-      margin-top: 60px;
+      font-size: 2.1rem;
+      line-height: 4.233rem;
+      letter-spacing: .042rem;
+      margin-top: 6rem;
     }
 
     .link-view-all {
-      margin-top: 60px;
+      margin-top: 6rem;
       display: inline-block;
-      box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 40px;
+      box-shadow: 0 .4rem .5rem .1rem rgba(0, 0, 0, 0.2);
+      border-radius: 4rem;
       background-color: $link;
-      padding: 30px 80px;
+      padding: 3rem 8rem;
       color: $white;
-      line-height: 28.89px;
+      line-height: 2.889rem;
       text-transform: uppercase;
-      font-size: 31px;
+      font-size: 3.1rem;
       font-family: 'Roboto-Bold';
+    }
+
+    @media screen and (max-width:1500px) {
+      .link-view-all {
+        padding: 2rem 7rem;
+      }
     }
   }
 
   .arrivals {
-    margin-top: 200px;
+    margin-top: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .title-arrivals {
       font-family: 'Quotus Thin';
-      font-size: 68px;
+      font-size: 6.8rem;
       font-weight: bold;
-      line-height: 46.18px;
+      line-height: 4.618rem;
       text-transform: uppercase;
-      letter-spacing: 1.24px;
+      letter-spacing: .124rem;
     }
 
     .subtitle-arrivals {
       font-family: 'Roboto-Regular';
-      font-size: 24px;
-      line-height: 42.33px;
-      letter-spacing: 0.48px;
-      max-width: 830px;
+      font-size: 2.4rem;
+      line-height: 4.233rem;
+      letter-spacing: .048rem;
+      max-width: 83rem;
       text-align: center;
     }
 
     .arrivals-content {
-      margin-top: 54px;
+      margin-top: 5.4rem;
       text-align: center;
 
       input[type='radio'] {
@@ -142,24 +152,25 @@
 
       label {
         font-family: 'Roboto-Regular';
-        font-size: 32px;
-        line-height: 42.33px;
-        letter-spacing: 0.64px;
+        font-size: 3.2rem;
+        line-height: 4.233rem;
+        letter-spacing: .064rem;
         color: $link;
         cursor: pointer;
         user-select: none;
 
         &.popular {
-          margin-right: 200px;
+          margin-right: 20rem;
         }
       }
 
       .merchandise-one {
-        margin-top: 55px;
+        margin-top: 5.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-row-gap: 50px;
-        grid-column-gap: 100px;
+        grid-gap: 15px;
+        grid-row-gap: 5rem;
+        grid-column-gap: 10rem;
         align-items: center;
 
         // @include row-flex();
@@ -167,36 +178,35 @@
         .merchandise-one-item {
           font-family: 'Roboto-Medium';
           text-align: center;
-          font-size: 14px;
-          line-height: 26.03px;
+          font-size: 1.4rem;
+          line-height: 2.603rem;
           // @include col();
           // @include size(4);
           display: flex;
           flex-direction: column;
           align-content: center;
           align-items: center;
-          margin-bottom: 30px;
-          height: 570px;
+          height: 57rem;
           justify-content: space-around;
 
           .merchandise-one-item-image {
-            height: 450px;
+            height: 45rem;
 
             img {
-              height: 100%;
+              max-width: none;
+              max-height: 100%;
             }
-
           }
 
           .merchandise-one-item-description {
-            width: 320px;
+            width: 32rem;
           }
 
           div.flex {
             span {
-              font-size: 20px;
+              font-size: 2rem;
               font-family: 'Roboto-Bold';
-              margin-right: 20px;
+              margin-right: 2rem;
             }
           }
         }
@@ -205,14 +215,44 @@
           display: flex;
         }
       }
+
+      @media screen and (max-width: 1700px) {
+        .merchandise-one {
+          grid-template-columns: 1fr 1fr;
+          padding: 10px;
+
+          .merchandise-one-item {
+            img {
+              max-width: 100%;
+              max-height: auto;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 1350px) {
+        .merchandise-one {
+          // grid-template-columns: 1fr;
+
+          .merchandise-one-item {
+            img {
+              // max-width: 100% !important;
+              // max-height: auto;
+            }
+          }
+
+
+        }
+      }
     }
 
     .camps-title {
-      @include title(62px);
+      @include title(6rem);
     }
 
     .camps-subtitle {
       @include subtitle();
+      margin-bottom: 5.4rem;
     }
 
     input[type="radio"] {
@@ -221,23 +261,24 @@
 
     label {
       font-family: 'Roboto-Regular';
-      font-size: 32px;
-      line-height: 42.33px;
-      letter-spacing: 0.64px;
+      font-size: 3.2rem;
+      line-height: 4.233rem;
+      letter-spacing: .064rem;
       color: $link;
       cursor: pointer;
       user-select: none;
 
       &.popular {
-        margin-right: 200px;
+        margin-right: 20rem;
       }
     }
 
     .camps-content {
       display: flex;
       width: 100%;
-      margin-top: 130px;
-
+      margin-top: 13rem;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
       .camps-conten-item {
         display: flex;
@@ -246,41 +287,42 @@
         align-items: center;
         font-family: 'Roboto-Medium';
         text-align: center;
-        font-size: 14px;
-        line-height: 26.03px;
+        font-size: 1.4rem;
+        line-height: 2.603rem;
         justify-content: space-between;
-        margin-right: 30px;
+        padding: 1.5rem;
+        max-width: 41.5rem;
 
         .camps-conten-item-image {
-          height: 250px;
+          height: 25rem;
         }
 
         .merchandise-one-item-description {
-          max-width: 300px;
+          max-width: 30rem;
         }
 
         div.flex {
           display: flex;
 
           span {
-            font-size: 20px;
+            font-size: 2rem;
             font-family: 'Roboto-Bold';
-            margin-right: 20px;
+            margin-right: 2rem;
           }
         }
       }
     }
 
     .round-link {
-      @include round-button(23px);
-      margin-top: 50px;
+      @include round-button(2.603rem);
+      margin-top: 5rem;
       font-family: 'Roboto-Medium';
     }
   }
 
   .camera-title {
-    @include title(62px);
-    margin-top: 130px;
+    @include title(6.2rem);
+    margin-top: 13rem;
   }
 
   .camera-subtitle {
@@ -289,8 +331,9 @@
 
   .camera-content {
     @include parentCard();
-    margin-top: 130px;
-    justify-content: space-between;
+    margin-top: 13rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     .camera-content-item {
       display: flex;
@@ -299,39 +342,40 @@
       align-items: center;
       font-family: 'Roboto-Medium';
       text-align: center;
-      font-size: 14px;
-      line-height: 26.03px;
+      font-size: 1.4rem;
+      line-height: 2.603rem;
       justify-content: space-between;
-      max-width: 310px;
+      max-width: 32.5rem;
+      padding: 1.5rem;
 
       .camera-content-item-image {
-        height: 530px;
+        height: 58rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
 
       .camera-content-item-description {
-        max-width: 300px;
+        max-width: 30rem;
         height: 10%;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
       }
 
       div.flex {
         display: flex;
 
         span {
-          font-size: 20px;
+          font-size: 2rem;
           font-family: 'Roboto-Bold';
-          margin-right: 20px;
+          margin-right: 2rem;
         }
       }
     }
   }
 
   .lens-title {
-    @include title(62px);
-    margin-top: 130px;
+    @include title(6.2rem);
+    margin-top: 13rem;
   }
 
   .lens-subtitle {
@@ -340,8 +384,8 @@
 
   .lens-content {
     @include parentCard();
-    margin-top: 130px;
-    justify-content: center;
+    margin-top: 13rem;
+    justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
 
@@ -352,38 +396,35 @@
       align-items: center;
       font-family: 'Roboto-Medium';
       text-align: center;
-      font-size: 14px;
-      line-height: 26.03px;
+      font-size: 1.4rem;
+      line-height: 2.603rem;
       justify-content: flex-end;
-      width: 500px;
-      margin-bottom: 50px;
+      max-width: 51.5rem;
+      padding: 1.5rem;
+      margin-bottom: 5rem;
 
       .lens-content-image {
-        margin-bottom: 60px;
+        margin-bottom: 6rem;
       }
 
       .lens-content-description {
-        max-width: 285px;
-        height: 90px;
-        margin-bottom: 10px;
+        max-width: 28.5rem;
+        height: 9rem;
+        margin-bottom: 1rem;
       }
 
       div.flex {
         display: flex;
 
         span {
-          font-size: 20px;
+          font-size: 2rem;
           font-family: 'Roboto-Bold';
-          margin-right: 20px;
+          margin-right: 2rem;
         }
       }
 
-      &:nth-child(1) {
-        margin-right: 230px;
-      }
-
       &:nth-child(3) {
-        max-width: 900px;
+        max-width: 90rem;
         width: auto;
 
         .desc-w-100 {
@@ -400,66 +441,76 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 1200px;
+  height: 120rem;
 
   @media (min-width: 1990px) {
     height: 100vh;
   }
 
   .feature {
-    padding: 485px 230px;
+    padding: 48.5rem 23rem;
 
     .feature-title {
       font-family: 'Quotus Bold';
       color: white;
-      line-height: 33.48px;
-      font-size: 55px;
+      line-height: 3.348rem;
+      font-size: 5.5rem;
     }
 
     .feature-subtitle {
       font-family: 'Quotus Thin';
-      font-size: 51px;
+      font-size: 5.1rem;
       font-weight: bold;
-      line-height: 33.48px;
+      line-height: 3.348rem;
       text-transform: uppercase;
       color: white;
     }
 
     .feature-description {
       font-family: 'Roboto-Medium';
-      font-size: 17px;
+      font-size: 1.7rem;
       color: white;
-      line-height: 30.33px;
-      margin-top: 60px;
-      max-width: 640px;
+      line-height: 3.033rem;
+      margin-top: 6rem;
+      max-width: 64rem;
     }
 
     form.flex {
       display: flex;
-      margin-top: 50px;
+      margin-top: 5rem;
 
       input {
-        border-radius: 40px;
-        padding: 30px 80px;
+        border-radius: 4rem;
+        padding: 3rem 8rem;
         background: white;
         border: none;
-        margin-right: 30px;
+        margin-right: 3rem;
         font-family: 'Roboto-Medium';
         color: gray;
-        font-size: 20px;
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width:1500px) {
+        input {
+          padding: 1rem 8rem;
+          font-size: 1.8rem;
+        }
       }
 
       button {
-        padding: 30px 80px;
+        padding: 3rem 8rem;
         background: $link;
         border: none;
-        border-radius: 40px;
+        border-radius: 4rem;
         color: white;
         font-family: 'Roboto-Medium';
+        font-size: 2.5rem;
+        padding: 1.5rem 6rem;
+      }
 
-        &:nth-child(2) {
-          font-size: 25px;
-          padding: 15px 60px;
+      @media screen and (max-width:1500px) {
+        button {
+          font-size: 2rem;
         }
       }
     }

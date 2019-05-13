@@ -1,6 +1,6 @@
 .footer {
   // margin: 0 230px;
-  margin-top: 300px;
+  margin-top: 30rem;
 
   .menu {
     display: flex;
@@ -10,31 +10,48 @@
       display: flex;
       flex-direction: column;
       font-family: 'Roboto-Regular';
-      font-size: 30px;
-      letter-spacing: 1.03px;
-      line-height: 64.57px;
+      font-size: 3rem;
+      letter-spacing: .103px;
+      line-height: 6.457rem;
 
       div {
         &:nth-child(1) {
-          font-size: 42px;
+          font-size: 4.2rem;
           font-family: Quotus Bold;
         }
       }
+    }
 
+    @media screen and (max-width: 1400px) {
+      .menu-item {
+        font-size: 2.5rem;
+      }
     }
   }
 
   .social {
-    margin-top: 200px;
+    margin-top: 20rem;
     display: flex;
     justify-content: center;
 
     button {
       border: none;
       background: none;
-      margin-right: 5px;
+      margin-right: .5rem;
+
+      @media screen and (max-width:1500px) {
+        img {
+          height: 5rem;
+        }
+      }
     }
 
     margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .footer {
+    padding: 0 10rem;
   }
 }

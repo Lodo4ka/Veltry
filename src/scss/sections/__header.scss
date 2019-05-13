@@ -1,6 +1,6 @@
 .header {
   background-image: url("./img/mountain_back.jpg");
-  height: 1080px;
+  height: 108rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,7 +19,7 @@
 
   .logo-and-additional {
     display: flex;
-    padding-top: 23px;
+    padding-top: 2.3rem;
     align-items: center;
     position: relative;
 
@@ -30,28 +30,32 @@
 
     .additional {
       position: absolute;
-      top: 60px;
-      right: 90px;
+      top: 6rem;
+      right: 9rem;
     }
   }
 
   .search {
     background-image: url("../../img/search.png");
-    height: 48px;
-    width: 46px;
+    background-repeat: no-repeat;
+    height: 4.8rem;
+    width: 4.6rem;
     display: inline-block;
-    margin-right: 62px;
+    margin-right: 6.2rem;
+    background-size: cover;
   }
 
   .bucket {
     background-image: url("../../img/shopping-cart.png");
     display: inline-block;
-    width: 48px;
-    height: 43px;
+    background-size: cover;
+    width: 4.8rem;
+    height: 4.3rem;
+    background-repeat: no-repeat;
   }
 
   nav {
-    margin: 63px auto 60px;
+    margin: 6.3rem auto 6rem;
 
     .menu {
       display: flex;
@@ -61,10 +65,10 @@
         color: $font-color;
         font-family: "Quotus Bold";
         text-transform: uppercase;
-        font-size: 23px;
-        line-height: 42.33px;
-        letter-spacing: 4.14px;
-        margin-right: 120px;
+        font-size: 2.3rem;
+        line-height: 4.233rem;
+        letter-spacing: .414px;
+        margin-right: 12rem;
 
         &:last-child {
           margin-right: 0;
@@ -75,29 +79,41 @@
 
   .main-subtitle {
     font-family: "Quotus Thin";
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #000000;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 6.3px;
+    letter-spacing: .63rem;
   }
 
   .main-title {
     font-family: Quotus Normal;
-    font-size: 175px;
+    font-size: 17.5rem;
     color: $white;
-    line-height: 46.5px;
+    line-height: 4.65rem;
     text-transform: uppercase;
-    letter-spacing: 6.36px;
+    letter-spacing: .636rem;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10rem;
     user-select: none;
   }
 
   .people {
     position: absolute;
-    top: 253px;
+    top: 25.3rem;
     right: 0;
+    height: 100%;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  @media screen and (max-width:1500px) {
+    .people {
+
+      max-height: 90rem;
+    }
   }
 }

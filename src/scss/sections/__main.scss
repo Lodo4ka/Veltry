@@ -1,12 +1,11 @@
 .main {
-
+  position: relative;
   @mixin title($font) {
     font-family: 'Quotus Thin';
     font-size: $font;
     font-weight: bold;
     text-transform: uppercase;
   }
-
   @mixin subtitle() {
     font-family: 'Roboto-Regular';
     font-size: 2.4rem;
@@ -15,7 +14,6 @@
     max-width: 83rem;
     text-align: center;
   }
-
   @mixin round-button($font) {
     border-radius: 4rem;
     box-shadow: 0 .4rem .5rem .1rem rgba(0, 0, 0, 0.2);
@@ -28,12 +26,10 @@
       padding: 2rem 7rem;
     }
   }
-
   @mixin parentCard() {
     display: flex;
     width: 100%;
   }
-
   @mixin childrenCard() {
     font-family: 'Roboto-Medium';
     text-align: center;
@@ -46,20 +42,16 @@
     margin-bottom: 3rem;
     height: 57rem;
     justify-content: space-around;
-
     div {
       height: 45rem;
 
       img {
         height: 100%;
       }
-
     }
-
     p {
       width: 32rem;
     }
-
     div.flex {
       span {
         font-size: 2rem;
@@ -68,7 +60,6 @@
       }
     }
   }
-
   .store {
     max-width: 72rem;
     margin-left: 23rem;
@@ -79,7 +70,6 @@
       line-height: 3.44rem;
       letter-spacing: .196rem;
     }
-
     .sub-title {
       font-size: 8rem;
       line-height: 4.527rem;
@@ -87,7 +77,6 @@
       letter-spacing: .15rem;
       font-family: Quotus Thin;
     }
-
     .store-content {
       color: #272626;
       font-family: 'Roboto-Light';
@@ -96,7 +85,6 @@
       letter-spacing: .042rem;
       margin-top: 6rem;
     }
-
     .link-view-all {
       margin-top: 6rem;
       display: inline-block;
@@ -117,13 +105,11 @@
       }
     }
   }
-
   .arrivals {
     margin-top: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     .title-arrivals {
       font-family: 'Quotus Thin';
       font-size: 6.8rem;
@@ -132,7 +118,6 @@
       text-transform: uppercase;
       letter-spacing: .124rem;
     }
-
     .subtitle-arrivals {
       font-family: 'Roboto-Regular';
       font-size: 2.4rem;
@@ -141,15 +126,12 @@
       max-width: 83rem;
       text-align: center;
     }
-
     .arrivals-content {
       margin-top: 5.4rem;
       text-align: center;
-
       input[type='radio'] {
         display: none;
       }
-
       label {
         font-family: 'Roboto-Regular';
         font-size: 3.2rem;
@@ -158,12 +140,10 @@
         color: $link;
         cursor: pointer;
         user-select: none;
-
         &.popular {
           margin-right: 20rem;
         }
       }
-
       .merchandise-one {
         margin-top: 5.5rem;
         display: grid;
@@ -172,7 +152,6 @@
         grid-row-gap: 5rem;
         grid-column-gap: 10rem;
         align-items: center;
-
         // @include row-flex();
         // @include md(justify-content, space-betwen);
         .merchandise-one-item {
@@ -188,7 +167,6 @@
           align-items: center;
           height: 57rem;
           justify-content: space-around;
-
           .merchandise-one-item-image {
             height: 45rem;
 
@@ -197,11 +175,9 @@
               max-height: 100%;
             }
           }
-
           .merchandise-one-item-description {
             width: 32rem;
           }
-
           div.flex {
             span {
               font-size: 2rem;
@@ -210,7 +186,6 @@
             }
           }
         }
-
         .flex {
           display: flex;
         }
@@ -245,20 +220,16 @@
         }
       }
     }
-
     .camps-title {
       @include title(6rem);
     }
-
     .camps-subtitle {
       @include subtitle();
       margin-bottom: 5.4rem;
     }
-
     input[type="radio"] {
       display: none;
     }
-
     label {
       font-family: 'Roboto-Regular';
       font-size: 3.2rem;
@@ -267,12 +238,10 @@
       color: $link;
       cursor: pointer;
       user-select: none;
-
       &.popular {
         margin-right: 20rem;
       }
     }
-
     .camps-content {
       display: flex;
       width: 100%;
@@ -296,14 +265,11 @@
         .camps-conten-item-image {
           height: 25rem;
         }
-
         .merchandise-one-item-description {
           max-width: 30rem;
         }
-
         div.flex {
           display: flex;
-
           span {
             font-size: 2rem;
             font-family: 'Roboto-Bold';
@@ -312,23 +278,19 @@
         }
       }
     }
-
     .round-link {
       @include round-button(2.603rem);
       margin-top: 5rem;
       font-family: 'Roboto-Medium';
     }
   }
-
   .camera-title {
     @include title(6.2rem);
     margin-top: 13rem;
   }
-
   .camera-subtitle {
     @include subtitle();
   }
-
   .camera-content {
     @include parentCard();
     margin-top: 13rem;
@@ -354,16 +316,13 @@
         flex-direction: column;
         justify-content: center;
       }
-
       .camera-content-item-description {
         max-width: 30rem;
         height: 10%;
         margin-bottom: 1rem;
       }
-
       div.flex {
         display: flex;
-
         span {
           font-size: 2rem;
           font-family: 'Roboto-Bold';
@@ -372,23 +331,19 @@
       }
     }
   }
-
   .lens-title {
     @include title(6.2rem);
     margin-top: 13rem;
   }
-
   .lens-subtitle {
     @include subtitle();
   }
-
   .lens-content {
     @include parentCard();
     margin-top: 13rem;
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
-
     .lens-content-item {
       display: flex;
       flex-direction: column;
@@ -406,27 +361,19 @@
       .lens-content-image {
         margin-bottom: 6rem;
       }
-
       .lens-content-description {
-        max-width: 28.5rem;
-        height: 9rem;
-        margin-bottom: 1rem;
       }
-
       div.flex {
         display: flex;
-
         span {
           font-size: 2rem;
           font-family: 'Roboto-Bold';
           margin-right: 2rem;
         }
       }
-
       &:nth-child(3) {
         max-width: 90rem;
         width: auto;
-
         .desc-w-100 {
           width: 100%;
         }
@@ -446,7 +393,6 @@
   @media (min-width: 1990px) {
     height: 100vh;
   }
-
   .feature {
     padding: 48.5rem 23rem;
 
@@ -456,7 +402,6 @@
       line-height: 3.348rem;
       font-size: 5.5rem;
     }
-
     .feature-subtitle {
       font-family: 'Quotus Thin';
       font-size: 5.1rem;
@@ -465,7 +410,6 @@
       text-transform: uppercase;
       color: white;
     }
-
     .feature-description {
       font-family: 'Roboto-Medium';
       font-size: 1.7rem;
@@ -474,7 +418,6 @@
       margin-top: 6rem;
       max-width: 64rem;
     }
-
     form.flex {
       display: flex;
       margin-top: 5rem;
@@ -496,7 +439,6 @@
           font-size: 1.8rem;
         }
       }
-
       button {
         padding: 3rem 8rem;
         background: $link;

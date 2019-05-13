@@ -4,8 +4,7 @@
 
   .menu {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
     .menu-item {
       display: flex;
       flex-direction: column;
@@ -28,12 +27,10 @@
       }
     }
   }
-
   .social {
     margin-top: 20rem;
     display: flex;
     justify-content: center;
-
     button {
       border: none;
       background: none;
@@ -45,7 +42,6 @@
         }
       }
     }
-
     margin-bottom: 3rem;
   }
 }
